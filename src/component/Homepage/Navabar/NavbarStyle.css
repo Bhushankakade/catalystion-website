@@ -1,0 +1,454 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.logo span {
+  color: var(--bright-green);
+}
+
+.ion__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.ion__nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.ion__nav-links li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--dark-blue);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.ion__nav-links li a:hover {
+  color: var(--bright-green);
+}
+
+.ion__buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ionbutton a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.ionbutton .login {
+  background-color: var(--bright-green);
+  padding: 5px 10px;
+  color: var(--white);
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid var(--bright-green);
+  transition: 0.3s ease-in-out;
+}
+
+.ionbutton .login:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+.ionbutton .applyascatalyst {
+  background-color: var(--bright-green);
+  padding: 5px 10px;
+  color: var(--white);
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 2px solid var(--bright-green);
+  transition: 0.3s ease-in-out;
+}
+
+.ionbutton .applyascatalyst:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+.ionbutton .applyascompany {
+  background-color: var(--white);
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.ionbutton .applyascompany:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: 2px solid var(--dark-blue);
+}
+
+.ion__navbar-menu {
+  color: var(--dark-blue);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: relative;
+}
+
+.ionbuttonres .applyascatalystres,
+.ionbuttonres .applyascompanyres {
+  display: none;
+  margin-top: 5.2rem;
+}
+
+.ionbuttonres .loginres {
+  display: none;
+  margin-top: 5.2rem;
+}
+
+@media (max-width: 1259px) {
+  .ion__nav-liks-container {
+    position: absolute;
+    right: 0;
+    top: 11vh;
+    padding: 0.5rem;
+    background-color: var(--white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: translateX(100%);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    max-width: 100vw;
+  }
+
+  .ion__nav-liks-container.active {
+    transform: translateX(0);
+    overflow: hidden;
+  }
+
+  .ion__nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .ion__nav-links li {
+    width: 100%;
+  }
+
+  .ion__nav-links li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+    font-size: 1.5rem;
+  }
+
+  .ion__nav-links li a:hover {
+    border: 0;
+    background-color: var(--background-clr);
+  }
+
+  .ion__navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ion__navbar-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 911px) {
+  .ionbutton .applyascatalyst,
+  .ionbutton .applyascompany {
+    display: none;
+  }
+
+  .ionbuttonres {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .ionbuttonres .applyascatalystres,
+  .ionbuttonres .applyascompanyres {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1.6rem;
+  }
+
+  .ion__nav-liks-container li a {
+    text-align: center;
+  }
+
+  .ion__navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .ionbutton .login {
+    position: relative;
+    left: 10rem;
+  }
+}
+
+@media (max-width: 671px) {
+  .ion__navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .ion__buttons .login {
+    position: relative;
+    left: 7rem;
+  }
+}
+
+@media (max-width: 609px) {
+  .ion__buttons .login {
+    position: relative;
+    left: 5rem;
+  }
+}
+
+@media (max-width: 534px) {
+  .ion__nav-liks-container {
+    z-index: 1;
+    margin-top: -1rem;
+  }
+
+  .ionbuttonres {
+    flex-wrap: wrap;
+    margin-right: 1.2rem;
+    gap: 0;
+    margin: 0.5rem auto;
+  }
+
+  .ionbuttonres .loginres {
+    display: flex;
+    left: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .ionbuttonres .applyascatalystres,
+  .ionbuttonres .applyascompanyres {
+    display: block;
+    font-size: 1rem;
+    gap: 0;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+
+  .ion__navbar {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 539px) {
+  .ion__nav-liks-container {
+    width: 100%;
+    height: 91vh;
+  }
+
+  .ion__nav-links {
+    width: 100%;
+    height: auto;
+  }
+
+  .ion__nav-links li a {
+    padding: 2rem 0;
+  }
+
+  .ion__navbar {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .ionbutton .login {
+    display: none;
+  }
+
+  .ionbuttonres .loginres {
+    display: flex;
+    margin-top: 0.1rem;
+  }
+
+  .ionbuttonres .applyascatalystres,
+  .ionbuttonres .applyascompanyres {
+    font-size: 0.8566rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 392px) {
+  .ion__navbar {
+    justify-content: center;
+  }
+
+  .ion__navbar-menu {
+    position: relative;
+    right: 2rem;
+  }
+
+  .ionbuttonres .applyascatalystres,
+  .ionbuttonres .applyascompanyres {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 317px) {
+  .ionbuttonres .applyascatalystres,
+  .ionbuttonres .applyascompanyres {
+    font-size: 0.8rem;
+  }
+
+  .ion__navbar-menu {
+    position: relative;
+    right: 3rem;
+  }
+}
+
+/* modal */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* Animation for Modal */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal Heading */
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--dark-blue);
+}
+
+/* Modal Buttons */
+.modal-button {
+  display: block;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Close Button */
+.modal-close {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.modal-close:hover {
+  background-color: #c0392b;
+}
+
+.modal-company-btn {
+  background-color: var(--dark-blue);
+}
+
+.modal-button {
+  text-decoration: none;
+}
+
+.modal-company-btn:hover {
+  background-color: var(--light-blue);
+}
+
+.modal-client-btn {
+  background-color: var(--bright-green);
+}
+
+.modal-client-btn:hover {
+  background-color: var(--light-green);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 15px;
+    width: 95%;
+  }
+}

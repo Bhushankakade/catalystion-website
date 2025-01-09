@@ -1,0 +1,43 @@
+.aboutus {
+  margin-top: 3rem;
+}
+
+.aboutus .title h1 {
+  color: #1a3a72;
+  text-align: center;
+}
+
+.title h1 span {
+  color: #2dbe60;
+}
+
+.aboutus .about_us-detail {
+  text-align: justify;
+  margin: 2rem 20rem;
+}
+
+.about_us-detail .heading {
+  color: #1a3a72;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about_us-detail .aboutus_info {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.aboutus-detail-approch {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.aboutus-detail-approch span {
+  color: #1a3a72;
+  font-weight: 600;
+  letter-spacing: 0;
+}

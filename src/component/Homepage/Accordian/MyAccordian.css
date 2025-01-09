@@ -1,0 +1,43 @@
+/* Accordian item container */
+.accordian-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+/* Hover effect for item */
+.accordian-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Title and icon */
+.accordian-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+}
+
+/* Icon (+/-) */
+.accordian-icon {
+  font-size: 2rem;
+  color: var(--dark-gray);
+}
+
+/* Content styling */
+.accordian-content {
+  font-size: 1rem;
+  color: var(--medium-gray);
+  padding: 10px;
+  border-left: 2px solid #ddd;
+  margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+  .accordian-title {
+    font-size: 1.2rem;
+  }
+}

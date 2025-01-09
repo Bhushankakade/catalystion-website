@@ -1,0 +1,132 @@
+.statistics-section {
+  background: linear-gradient(to bottom right, #f4f4f8, #e0e8f9);
+  padding: 50px 20px 10px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.statistics-section h2 {
+  color: var(--dark-blue);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.statistics-section p {
+  font-size: 1em;
+  color: var(-medium-gray);
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  flex: 1 1 200px;
+  min-width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-item i {
+  font-size: 2.3rem;
+  color: var(--bright-green);
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 2em;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.stat-item p {
+  font-size: 1.1em;
+  color: var(--dark-gray);
+}
+
+@media (max-width: 1024px) {
+  .statistics {
+    justify-content: center;
+  }
+
+  .stat-item {
+    flex: 1 1 250px;
+    padding: 25px;
+  }
+
+  .cta-button {
+    font-size: 1.1em;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-section h2 {
+    font-size: 2em;
+  }
+
+  .stat-item {
+    flex: 1 1 80px;
+    padding: 15px;
+    height: auto;
+    font-size: 0.8rem;
+  }
+
+  .stat-item .fas {
+    font-size: 2rem;
+  }
+
+  .statistics {
+    justify-content: center;
+  }
+
+  .stat-item {
+    flex: 1 1 150px;
+    padding: 20px;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-section h2 {
+    font-size: 1.7em;
+  }
+
+  .stat-item {
+    flex: 1 1 80px;
+    padding: 15px;
+    height: auto;
+    font-size: 0.8rem;
+  }
+
+  .stat-item .fas {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+  }
+}

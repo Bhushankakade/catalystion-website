@@ -1,0 +1,105 @@
+/* Root Variables */
+:root {
+  --primary-color: #2dbe60; /* Green shade */
+  --secondary-color: #ffffff; /* White background */
+  --light-gray: #f9f9f9; /* Light gray background */
+  --dark-gray: #333333; /* Dark text color */
+}
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.client-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+/* Title */
+.client-form-title {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Step Title */
+h2 {
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem; /* Space below headings */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 0.75rem; /* Space between form groups */
+}
+
+/* Labels */
+.form-label {
+  margin-bottom: 0.5rem; /* Space between label and input */
+  font-weight: bold; /* Bold labels for clarity */
+}
+
+/* Input Fields */
+.form-input,
+.form-textarea,
+.form-select {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 0.75rem; /* Padding for input fields */
+  border-radius: 0.5rem; /* Rounded corners */
+  border: 0.5px solid #ccc; /* Light border color */
+}
+
+/* Textarea Specific */
+.form-textarea {
+  height: auto; /* Adjust height for textarea */
+}
+
+/* Error Messages */
+.error-message {
+  color: red; /* Red text for errors */
+}
+
+/* Submit Button and Navigation Buttons */
+button {
+  background-color: var(--primary-color); /* Green background for buttons */
+  color: white; /* White text color for contrast */
+  padding: 0.75rem; /* Padding for buttons */
+  border-radius: 0.5rem; /* Rounded corners for buttons */
+  border: none; /* No border for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #28a745; /* Darker green on hover */
+}
+
+/* Thank You Message Style*/
+.thank-you-message-client {
+  text-align: center;
+  color: #1a3a72;
+}
+
+.thank-you-message-client h1 {
+  font-size: 3rem;
+}
+
+.thank-you-message-client p {
+  font-size: 1.2rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align navigation buttons to the right */
+}
+
+.navigation-buttons button {
+  margin-left: 0.5rem; /* Space between buttons in navigation section*/
+}

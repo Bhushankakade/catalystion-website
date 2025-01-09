@@ -1,0 +1,105 @@
+/* Form container */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.form-title-catalyst {
+  text-align: center;
+  font-size: 2rem;
+  color: #2dbe60;
+  margin-bottom: 20px;
+}
+
+/* Thank You Message */
+.thank-you-message-catalyst {
+  text-align: center;
+  background: #e4f9d9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.thank-you-message-catalyst h2 {
+  color: #388e3c;
+  font-size: 3rem;
+}
+
+.thank-you-message-catalyst p {
+  color: #555;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Form */
+.catalyst-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+
+.form-input-catalyst {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input-catalyst:focus {
+  border-color: #2dbe60;
+  outline: none;
+}
+
+/* Error Message */
+.error-message {
+  color: #f44336;
+  font-size: 0.875rem;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin: 1rem auto;
+}
+
+.navigation-buttons button {
+  background-color: #2dbe60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 10rem;
+  margin-left: 1rem;
+}
+
+.navigation-buttons button:hover {
+  background-color: #36a15c;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
