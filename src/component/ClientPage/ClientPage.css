@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  /* background: linear-gradient(90deg, #007bff, #00c851); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 39%,
+    rgba(0, 212, 255, 1) 85%
+  );
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta a {
+  background: #fff;
+  color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.cta a:hover {
+  background: #00c851;
+  color: #fff;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about,
+.services,
+.testimonials,
+.contact {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about h2 {
+  color: var(--dark-blue);
+}
+
+.about h2 span {
+  color: var(--bright-green);
+}
+
+.services h2 {
+  color: var(--dark-blue);
+}
+
+.about p,
+.services p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  background: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.testimonials h2 {
+  color: var(--dark-blue);
+}
+
+.testimonial {
+  text-align: left;
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+  font-size: 1.2em;
+  color: var(--dark-blue);
+}
+
+.testimonial p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.contact h2 {
+  color: var(--dark-blue);
+}
+
+.contact p {
+  color: var(--dark-blue);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: var(--dark-blue);
+  color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: var(--light-blue);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #00c851;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .services .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -10,7 +10,7 @@ const Aboutus = () => {
         </h1>
       </div>
       <div className="about_us-detail">
-        <p className="heading">Who WE Are</p>
+        <p className="heading">Who We Are</p>
         <p className="aboutus_info">
           Catalystion is a dynamic consultancy platform dedicated to
           revolutionizing problem-solving in the chemical sector. We specialize

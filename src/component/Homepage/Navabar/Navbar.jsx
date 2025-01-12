@@ -41,10 +41,13 @@ const Menu = () => {
         <Link to="#catalyst">Catalyst</Link>
       </li>
       <li>
-        <Link to="#client">Client</Link>
+        <Link to="client">Client</Link>
       </li>
       <li>
         <Link to="aboutus">About Us</Link>
+      </li>
+      <li>
+        <Link to="aboutus">Contact</Link>
       </li>
     </ul>
   );
@@ -60,7 +63,7 @@ const IonButtons = ({ onOpenModal }) => {
       </div>
       <div className="ionbutton">
         <Link className="applyascompany" onClick={onOpenModal}>
-          Apply as Company
+          Hire Catalyst
         </Link>
       </div>
     </>

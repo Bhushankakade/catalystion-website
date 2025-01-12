@@ -20,7 +20,7 @@ const Footer = () => {
           <h2 className="footer-heading">Quick Links</h2>
           <ul className="footer-list">
             <li>
-              <Link to="/about" className="footer-link">
+              <Link to="/aboutus" className="footer-link">
                 About Us
               </Link>
             </li>
@@ -60,12 +60,12 @@ const Footer = () => {
           <ul className="footer-social-list">
             <li>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/catalystion"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-link"
               >
-                <FaLinkedin /> {/* LinkedIn Icon */}
+                <FaLinkedin />
               </a>
             </li>
           </ul>

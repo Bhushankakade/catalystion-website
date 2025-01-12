@@ -16,6 +16,7 @@ import {
   RegisterasClient,
   AboutUS,
   TermsAndCondition,
+  Client,
 } from "./modules";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -59,6 +60,10 @@ const App = () => {
     {
       path: "/terms",
       element: <TermsAndCondition />,
+    },
+    {
+      path: "/client",
+      element: <Client />,
     },
   ]);
 

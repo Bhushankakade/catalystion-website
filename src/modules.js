@@ -14,3 +14,4 @@ export { default as RegisterasCompany } from "./component/ApplyasClient/Register
 export { default as RegisterasClient } from "./component/ApplyasClient/RegisterasClient";
 export { default as AboutUS } from "./component/Aboutus/Aboutus";
 export { default as TermsAndCondition } from "./component/TermsAndCondition/TermsAndCondition";
+export { default as Client } from "./component/ClientPage/ClientPage";

@@ -56,21 +56,21 @@ const StatisticsSection = () => {
         <div className="statistics">
           <div className="stat-item">
             <i className="fas fa-users"></i>
-            <div className="stat-number" data-target="500">
+            <div className="stat-number" data-target="1000">
               0
             </div>
             <p>Consultants</p>
           </div>
           <div className="stat-item">
             <i className="fas fa-handshake"></i>
-            <div className="stat-number" data-target="100">
+            <div className="stat-number" data-target="20">
               0
             </div>
             <p>Companies Supported</p>
           </div>
           <div className="stat-item">
             <i className="fas fa-check-square"></i>
-            <div className="stat-number" data-target="1000">
+            <div className="stat-number" data-target="40">
               0
             </div>
             <p>Successful Projects</p>
