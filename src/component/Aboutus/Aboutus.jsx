@@ -53,6 +53,86 @@ const Aboutus = () => {
           execution.
         </div>
       </div>
+
+      <div className="about_us-detail">
+        <p className="heading">Core Values</p>
+        <div className="aboutus-detail-approch">
+          <span>Innovation:</span> We thrive on transforming challenges into
+          opportunities through innovative solutions.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Integrity:</span> Transparency and honesty are at the core of
+          our business operations and interactions.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Collaboration:</span> We believe in the power of teamwork
+          between consultants and clients to achieve optimal outcomes.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Excellence:</span> Our commitment to delivering the highest
+          standard of service and solutions drives us forward.
+        </div>
+      </div>
+
+      <div className="about_us-detail">
+        <p className="heading">Our Expertise</p>
+        <div className="aboutus-detail-approch">
+          <span>Diverse Expertise:</span> Our consultants come from various
+          specializations within the chemical sector, offering a range of
+          perspectives and solutions.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Industry Recognition:</span> Catalystion is recognized for its
+          contributions to solving some of the most challenging issues in the
+          industry.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Real-World Impact:</span> We’ve successfully helped companies
+          reduce costs, improve efficiency, and accelerate innovation across
+          their operations.
+        </div>
+      </div>
+
+      <div className="about_us-detail">
+        <p className="heading">Our Commitment to Sustainability</p>
+        <div className="aboutus-detail-approch">
+          <span>Environmental Impact:</span> We are passionate about helping
+          businesses find sustainable solutions that benefit both their
+          operations and the planet.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Green Innovation:</span> Our consultants focus on eco-friendly
+          processes and technologies that reduce the carbon footprint of
+          industrial operations.
+        </div>
+      </div>
+
+      <div className="about_us-detail">
+        <p className="heading">Client-Centric Approach</p>
+        <div className="aboutus-detail-approch">
+          <span>Dedicated Support:</span> We provide a personal touch by
+          assigning a dedicated consultant who fully understands your business
+          needs.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Results-Driven:</span> Our solutions are not just theoretical;
+          we deliver actionable results with measurable outcomes.
+        </div>
+      </div>
+
+      <div className="about_us-detail">
+        <p className="heading">Global Reach with Local Insight</p>
+        <div className="aboutus-detail-approch">
+          <span>Cross-Border Solutions:</span> Catalystion operates globally,
+          providing local insights and solutions tailored to various markets and
+          regions.
+        </div>
+        <div className="aboutus-detail-approch">
+          <span>Industry Collaborations:</span> We work closely with
+          universities, research institutions, and other organizations to stay
+          ahead of emerging trends and technologies.
+        </div>
+      </div>
     </div>
   );
 };

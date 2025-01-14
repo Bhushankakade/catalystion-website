@@ -17,6 +17,7 @@ import {
   AboutUS,
   TermsAndCondition,
   Client,
+  OurServices,
 } from "./modules";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -35,6 +36,7 @@ const App = () => {
           <HowItWorks />
           <ComingSoonSection />
           <SegmentsSection />
+          <OurServices />
           <Accordian />
           <JoinCommunitySection />
           <Footer />
