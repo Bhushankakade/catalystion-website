@@ -29,11 +29,6 @@ const Footer = () => {
                 Our Services
               </Link>
             </li>
-            <li>
-              <Link to="/contact" className="footer-link">
-                Contact Us
-              </Link>
-            </li>
           </ul>
         </div>
 

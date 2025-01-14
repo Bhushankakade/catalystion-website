@@ -46,9 +46,6 @@ const Menu = () => {
       <li>
         <Link to="aboutus">About Us</Link>
       </li>
-      <li>
-        <Link to="aboutus">Contact</Link>
-      </li>
     </ul>
   );
 };

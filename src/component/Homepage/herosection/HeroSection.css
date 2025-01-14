@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   margin: 2rem 10rem;
-  gap: 2.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   max-width: 100%;
   margin-top: 5rem;
@@ -12,13 +12,13 @@
 .ion__landingintro-img {
   max-width: 30rem;
   height: auto;
+  margin-top: -6rem;
 }
 
-.ion__landingintro-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
+.heroimage {
+  width: 30rem;
+  mix-blend-mode: multiply;
+  height: 30rem;
 }
 
 .landing__intro-section {
@@ -51,6 +51,12 @@
     flex-direction: column; /* Stack content vertically */
   }
 
+  .heroimage {
+    width: 25rem;
+    mix-blend-mode: multiply;
+    height: 25rem;
+  }
+
   .landing__intro-section {
     max-width: 100%; /* Full width for text on smaller screens */
   }
@@ -67,6 +73,13 @@
 @media (max-width: 480px) {
   .landing-intro {
     margin: 1rem;
+  }
+
+  .heroimage {
+    width: 20rem;
+    mix-blend-mode: multiply;
+    height: 20rem;
+    margin: 0 auto;
   }
 
   .ion__landingintro-img {

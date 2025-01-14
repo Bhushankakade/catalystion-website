@@ -104,21 +104,6 @@ const App = () => {
           </ul>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section className="contact" id="contact">
-        <h2>Ready to Revolutionize Your Chemical Business?</h2>
-        <p>
-          Contact us today and let's discuss how we can help transform your
-          business!
-        </p>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
     </div>
   );
 };

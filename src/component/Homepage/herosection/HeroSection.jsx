@@ -1,14 +1,12 @@
 import "./HeroSection.css";
+import heroImage from "../../../../src/assets/heroimage.mp4";
 
 const home = () => {
   return (
     <>
       <div className="landing-intro">
         <div className="ion__landingintro-img">
-          <img
-            src="https://media.istockphoto.com/id/1416048929/photo/woman-working-on-laptop-online-checking-emails-and-planning-on-the-internet-while-sitting-in.jpg?s=1024x1024&w=is&k=20&c=rsMEfrDiYh3Y2CbJ8OQYRfJZ2kOGBneREKETBn0vyjU="
-            className="ion__landingintro-image"
-          />
+          <video src={heroImage} autoPlay loop className="heroimage" />
         </div>
 
         <div className="landing__intro-section">
