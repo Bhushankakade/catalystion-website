@@ -1,3 +1,4 @@
+/* Container */
 .landing-intro {
   display: flex;
   align-items: center;
@@ -9,18 +10,20 @@
   margin-top: 5rem;
 }
 
+/* Video Section */
 .ion__landingintro-img {
   max-width: 30rem;
-  height: auto;
   margin-top: -6rem;
 }
 
 .heroimage {
-  width: 30rem;
+  width: 100%; /* Full width within its container */
+  max-width: 30rem; /* Max width for large screens */
+  height: auto; /* Maintain aspect ratio */
   mix-blend-mode: multiply;
-  height: 30rem;
 }
 
+/* Text Section */
 .landing__intro-section {
   flex: 1 1 auto;
   max-width: 40rem;
@@ -28,69 +31,77 @@
 }
 
 .landing__intro-section h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* Fluid font size */
   color: var(--dark-green);
 }
 
 .landing__intro-section p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem); /* Fluid font size */
+  line-height: 1.6;
   font-weight: 400;
   margin-top: 1rem;
   color: var(--medium-gray);
 }
 
+/* Tablet View */
 @media (max-width: 1024px) {
   .landing-intro {
     margin: 2rem 4rem;
   }
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
   .landing-intro {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
   }
 
   .heroimage {
-    width: 25rem;
-    mix-blend-mode: multiply;
-    height: 25rem;
+    max-width: 25rem; /* Smaller video */
+    height: auto;
   }
 
   .landing__intro-section {
-    max-width: 100%; /* Full width for text on smaller screens */
+    max-width: 100%;
   }
 
   .landing__intro-section h1 {
-    font-size: 1.5rem; /* Smaller heading size */
+    font-size: 1.5rem;
   }
 
   .landing__intro-section p {
-    font-size: 0.9rem; /* Smaller paragraph size */
+    font-size: 0.9rem;
   }
 }
 
+/* Small Mobile View */
 @media (max-width: 480px) {
   .landing-intro {
     margin: 1rem;
   }
 
   .heroimage {
-    width: 20rem;
-    mix-blend-mode: multiply;
-    height: 20rem;
+    max-width: 20rem;
+    height: auto;
     margin: 0 auto;
   }
 
-  .ion__landingintro-img {
-    max-width: 90%; /* Slight padding on very small screens */
-  }
-
   .landing__intro-section h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .landing__intro-section p {
     font-size: 0.8rem;
   }
+}
+
+/* Universal Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
 }
