@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import heroImage from "../../../../src/assets/heroimage.mp4";
+import heroImage from "../../../../src/assets/heroimage4.mp4";
 import "./HeroSection.css";
 
 const Home = () => {
@@ -31,7 +31,11 @@ const Home = () => {
       </div>
       <div className="landing__intro-section">
         <h1>
-          Empowering Consultants, <br /> Connecting Companies
+          <span className="empowering-consultant">
+            Empowering Consultants,{" "}
+          </span>
+          <br />
+          <span className="connecting-companies">Connecting Companies</span>
         </h1>
         <p>
           Catalystion brings together expert consultants and ambitious

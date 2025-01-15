@@ -18,6 +18,7 @@ import {
   TermsAndCondition,
   Client,
   OurServices,
+  PrivacyPolicyofCatalystion,
 } from "./modules";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -66,6 +67,10 @@ const App = () => {
     {
       path: "/client",
       element: <Client />,
+    },
+    {
+      path: "/PrivacyPolicyofCatalystion",
+      element: <PrivacyPolicyofCatalystion />,
     },
   ]);
 

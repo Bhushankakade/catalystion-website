@@ -1,6 +1,6 @@
 export { default as Navbar } from "./component/Homepage/Navabar/Navbar";
 export { default as HeroSection } from "./component/Homepage/herosection/HeroSection";
-export { default as IonsInNumber } from "./component/Homepage/ionInNumber/ionsInNumber";
+export { default as IonsInNumber } from "./component/Homepage/ionInNumber/IonsInNumber.jsx";
 export { default as FindandJoinChallenge } from "./component/Homepage/FindandJoinChallenge/FindandJoinChallenge";
 export { default as WhyChooseCatalystion } from "./component/Homepage/WhyChooseCatalystion/WhyChooseCatalystion";
 export { default as HowItWorks } from "./component/Homepage/HowItWorks/HowItWorks";
@@ -16,3 +16,4 @@ export { default as AboutUS } from "./component/Aboutus/Aboutus";
 export { default as TermsAndCondition } from "./component/TermsAndCondition/TermsAndCondition";
 export { default as Client } from "./component/ClientPage/ClientPage";
 export { default as OurServices } from "./component/OurServices/OurServices";
+export { default as PrivacyPolicyofCatalystion } from "./component/PrivacyPolicyofCatalystion/PrivacyPolicyofCatalystion";

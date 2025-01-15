@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .footer {
   /* background-color: var(--dark-gray); */
   background-color: #777;
@@ -28,7 +31,6 @@
 .logo {
   color: var(--dark-blue);
   font-size: 2rem;
-  text-shadow: 1px 1px 60px #000;
 }
 
 .footer-tagline {
@@ -83,7 +85,7 @@
 }
 
 .footer-social-link:hover {
-  color: var(--bright-green);
+  color: #0a66c2;
 }
 
 .footer-bottom {

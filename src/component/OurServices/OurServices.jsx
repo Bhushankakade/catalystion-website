@@ -91,7 +91,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <h1 className="services-title">Our Services</h1>
       <div className="services-container">
         {services.map((service, index) => (
