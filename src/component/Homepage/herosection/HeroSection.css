@@ -61,10 +61,11 @@
 @media (max-width: 768px) {
   .landing-intro {
     flex-direction: column;
+    margin-top: 4rem;
   }
 
   .heroimage {
-    max-width: 25rem; /* Smaller video */
+    max-width: 25rem;
     height: auto;
   }
 
@@ -84,11 +85,11 @@
 /* Small Mobile View */
 @media (max-width: 480px) {
   .landing-intro {
-    margin: 1rem;
+    margin-top: 8rem;
   }
 
   .heroimage {
-    max-width: 20rem;
+    width: 25rem;
     height: auto;
     margin: 0 auto;
   }

@@ -82,26 +82,25 @@ const App = () => {
         <div className="testimonial">
           <h4>Dilip Agarwal, Founder of Nirmala Udyog</h4>
           <p>
-            Catalystion helped us overcome significant challenges in the
-            competitive detergent market. Their comprehensive market research,
-            innovative packaging recommendations, and targeted social media
-            campaigns transformed our business.
+            Catalystion played a pivotal role in addressing challenges in the
+            competitive detergent market. Their expertise in market research,
+            innovative packaging solutions, and social media strategies brought
+            significant positive changes to our business. We are grateful for
+            their support in transforming our brand and strengthening its
+            presence in the market.
           </p>
-          <ul>
-            <li>Increased market share by 20% within 4 months.</li>
-            <li>Boosted customer engagement on social media by 35%.</li>
-            <li>
-              Achieved a 25% increase in sales volume for Ravjee Detergent.
-            </li>
-            <li>
-              Enhanced customer satisfaction, resulting in a 15% increase in
-              repeat purchases.
-            </li>
-            <li>
-              Strengthened brand perception, establishing Ravjee as a trusted
-              household detergent.
-            </li>
-          </ul>
+        </div>
+        <div className="testimonial">
+          <h4>Ankur, Founder of Fatty Acids Esters</h4>
+          <p>
+            Catalystion has been instrumental in helping us take our polymer
+            business to the next level. They supported us in developing a
+            professional and user-friendly website, making it easier to showcase
+            our products and connect with clients. Their insights in technical
+            product development also played a key role in improving our
+            offerings. Their expertise and commitment have truly made a positive
+            impact on our business growth.
+          </p>
         </div>
       </section>
     </div>

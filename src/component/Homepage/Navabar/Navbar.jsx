@@ -38,7 +38,7 @@ const Menu = () => {
   return (
     <ul className="ion__nav-links">
       <li>
-        <Link to="#catalyst">Catalyst</Link>
+        <Link to="catalyst">Catalyst</Link>
       </li>
       <li>
         <Link to="client">Client</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
       <div className="ion__navbar">
         <div className="ion__logo">
           <h1 className="logo">
-            <Link to="#home">
+            <Link to="/">
               Catalyst<span>ion</span>
             </Link>
           </h1>

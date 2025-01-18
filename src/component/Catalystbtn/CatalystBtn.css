@@ -1,0 +1,152 @@
+:root {
+  --dark-blue: #1a3a72;
+  --bright-green: #2dbe60;
+  --light-gray-bg: #f4f8fc;
+  --white: #ffffff;
+  --dark-gray: #333333;
+  --gray-text: #666666;
+  --orange-highlight: #f77f00;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray-bg);
+  color: var(--dark-gray);
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--white);
+}
+
+.header h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 0;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.welcome-text h2 {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 1.1rem;
+  color: var(--gray-text);
+  margin-bottom: 20px;
+}
+
+.welcome-text a {
+  background-color: var(--bright-green);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.welcome-text a:hover {
+  background-color: var(--dark-blue);
+}
+
+.demo-image {
+  flex: 1;
+  text-align: center;
+}
+
+.demo-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.services,
+.faq,
+.contact-us {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services h2,
+.faq h2,
+.contact-us h2 {
+  text-align: center;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: var(--light-gray-bg);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: var(--dark-blue);
+}
+
+.faq ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.faq li span {
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}

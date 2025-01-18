@@ -19,6 +19,7 @@ import {
   Client,
   OurServices,
   PrivacyPolicyofCatalystion,
+  CatalystBtn,
 } from "./modules";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -71,6 +72,10 @@ const App = () => {
     {
       path: "/PrivacyPolicyofCatalystion",
       element: <PrivacyPolicyofCatalystion />,
+    },
+    {
+      path: "/catalyst",
+      element: <CatalystBtn />,
     },
   ]);
 

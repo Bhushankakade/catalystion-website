@@ -17,3 +17,4 @@ export { default as TermsAndCondition } from "./component/TermsAndCondition/Term
 export { default as Client } from "./component/ClientPage/ClientPage";
 export { default as OurServices } from "./component/OurServices/OurServices";
 export { default as PrivacyPolicyofCatalystion } from "./component/PrivacyPolicyofCatalystion/PrivacyPolicyofCatalystion";
+export { default as CatalystBtn } from "./component/Catalystbtn/CatalystBtn";
