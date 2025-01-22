@@ -27,7 +27,7 @@ const HowItWorks = () => {
   const clientSteps = [
     {
       icon: "fa-pencil-alt",
-      title: "Post a Project",
+      title: "Start Project",
       description: "Share your challenge.",
     },
     {

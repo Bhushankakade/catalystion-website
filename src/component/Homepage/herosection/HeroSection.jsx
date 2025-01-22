@@ -31,9 +31,7 @@ const Home = () => {
       </div>
       <div className="landing__intro-section">
         <h1>
-          <span className="empowering-consultant">
-            Empowering Consultants,{" "}
-          </span>
+          <span className="empowering-consultant">Empowering Consultants,</span>
           <br />
           <span className="connecting-companies">Connecting Companies</span>
         </h1>

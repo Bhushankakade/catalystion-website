@@ -4,6 +4,7 @@
   margin-top: 1rem;
 }
 
+/* Container */
 .why-choose-section .container {
   width: 90%;
   max-width: 1200px;
@@ -11,12 +12,14 @@
   text-align: center;
 }
 
+/* Heading Styles */
 #why-choose-catalystion h2 {
   font-size: 2.5em;
   color: var(--dark-blue);
   margin-bottom: 20px;
 }
 
+/* Description Styles */
 .section-description {
   font-size: 1.2em;
   color: var(--medium-gray);
@@ -24,22 +27,35 @@
   line-height: 1.6;
 }
 
+/* Benefits Grid */
 .benefits {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem; /* Adds consistent spacing between items */
+  gap: 1.5rem;
 }
 
+/* Benefit Items - Three Boxes for Desktop */
 .benefit-item {
   background-color: var(--white);
   border-radius: 10px;
   padding: 20px;
-  flex: 1 1 calc(33.33% - 1.5rem); /* Default three-box layout */
+  flex: 1 1 calc(33.33% - 1.5rem); /* Default 3 boxes per row for Desktop */
   max-width: 300px;
   text-align: center;
   margin: 1rem 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 200px; /* Sets minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content stays well distributed inside */
+}
+
+/* Prevent excess vertical stretch */
+.benefit-item h3,
+.benefit-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .benefit-icon {
@@ -58,14 +74,15 @@
   font-size: 1em;
   color: var(--medium-gray);
   line-height: 1.4;
+  margin-bottom: 15px; /* Margin to space the text */
 }
 
-/* Tablet screens (max-width 768px): Three-box layout */
-@media (max-width: 768px) {
+/* Tablet and Medium Screens (Max 1024px) */
+@media (max-width: 1024px) {
   .benefit-item {
-    flex: 1 1 calc(50% - 1rem); /* Two boxes per row */
+    flex: 1 1 calc(50% - 1rem); /* Two boxes per row for tablets */
     max-width: 50%;
-    padding: 15px;
+    min-height: 180px;
   }
 
   #why-choose-catalystion h2 {
@@ -74,7 +91,6 @@
 
   .section-description {
     font-size: 1rem;
-    line-height: 1.5;
   }
 
   .benefit-item h3 {
@@ -90,32 +106,13 @@
   }
 }
 
-/* Near 500px breakpoint: Prevent shrinking by adjusting item width */
-@media (max-width: 576px) {
-  .benefit-item {
-    flex: 1 1 calc(50% - 1rem); /* Still two boxes per row */
-    max-width: 50%;
-  }
-
-  .benefit-item h3 {
-    font-size: 1.2rem;
-  }
-
-  .benefit-icon {
-    font-size: 1.6rem;
-  }
-
-  .benefit-item p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Mobile screens (max-width 480px): Two-box layout */
-@media (max-width: 480px) {
+/* Mobile View (Max 768px) */
+@media (max-width: 768px) {
   .benefit-item {
     flex: 1 1 calc(50% - 1rem); /* Two boxes per row */
     max-width: 50%;
-    padding: 10px;
+    min-height: 200px; /* Minimum height for uniformity */
+    padding: 15px;
   }
 
   #why-choose-catalystion {
@@ -125,6 +122,33 @@
   #why-choose-catalystion h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .benefit-item p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Devices under 480px */
+@media (max-width: 480px) {
+  .benefit-item {
+    flex: 1 1 100%; /* Full width per box */
+    max-width: 100%;
+    min-height: 180px; /* Adjust for small screens */
+    padding: 10px;
+  }
+
+  #why-choose-catalystion h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
   }
 
   .section-description {

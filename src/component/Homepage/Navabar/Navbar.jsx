@@ -15,14 +15,20 @@ const Modal = ({ isOpen, onClose, onSelect }) => {
         <Link
           to="register-company"
           className="modal-button modal-company-btn"
-          onClick={() => onSelect("company")}
+          onClick={() => {
+            onSelect("company");
+            onClose(); // Close the modal after selection
+          }}
         >
           Apply as Company
         </Link>
         <Link
           to="register-client"
           className="modal-button modal-client-btn"
-          onClick={() => onSelect("client")}
+          onClick={() => {
+            onSelect("client");
+            onClose(); // Close the modal after selection
+          }}
         >
           Apply as Client
         </Link>
@@ -83,7 +89,8 @@ const Navbar = () => {
     setModalOpen(false); // Close the modal
   };
 
-  const handleSelectApplication = () => {
+  const handleSelectApplication = (type) => {
+    console.log(`Selected application type: ${type}`); // Handle selection logic here
     setModalOpen(false); // Close the modal after selection
   };
 
@@ -132,20 +139,20 @@ const Navbar = () => {
       <div className="ionbuttonres">
         <div className="ionbutton ionbuttonres">
           <Link
-            to="register-catalyst"
+            to="ApplyasCatalyst"
             className="applyascatalyst applyascatalystres"
           >
             Apply as Catalyst
           </Link>
         </div>
         <div className="ionbutton ionbuttonres">
-          <Link
-            to="register-client"
+          {/* Open Modal instead of direct link */}
+          <button
             className="applyascompany applyascompanyres"
             onClick={handleModalOpen}
           >
-            Apply as Client
-          </Link>
+            Hire Catalyst
+          </button>
         </div>
       </div>
     </>
