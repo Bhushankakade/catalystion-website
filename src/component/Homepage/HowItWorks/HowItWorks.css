@@ -2,6 +2,7 @@
   background-color: var(--white);
   padding: 60px 0;
   text-align: center;
+  padding: 10px;
 }
 
 .how-it-works-section h2 {
@@ -50,4 +51,16 @@
 .step-item p {
   color: var(--medium-gray);
   font-size: 0.9em;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .steps {
+    justify-content: space-between;
+  }
+
+  .step-item {
+    width: calc(50% - 10px); /* 2 boxes per row with a gap of 10px */
+    margin-bottom: 20px; /* Provides some space between the rows */
+  }
 }

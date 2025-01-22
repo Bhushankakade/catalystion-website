@@ -13,7 +13,7 @@
 .ion__landingintro-img {
   flex: 1 1 100%;
   max-width: 35rem;
-  margin-top: 2rem; /* Removed negative margin */
+  margin-top: -10rem;
 }
 
 .heroimage {
@@ -22,6 +22,7 @@
   border-radius: 0.5rem; /* Rounded edges */
   margin-top: -5rem;
   mix-blend-mode: multiply;
+  margin: 0 auto;
 }
 
 /* Text Section */
@@ -62,8 +63,9 @@
 
   .heroimage {
     max-width: 30rem;
-    margin: -10rem auto 0;
     z-index: -999;
+    display: block;
+    margin: 0 auto;
   }
 
   .landing__intro-section p {
@@ -80,7 +82,9 @@
   }
 
   .heroimage {
-    max-width: 90%; /* Responsive image scaling */
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
   }
 
   .landing__intro-section h1 {
@@ -100,6 +104,8 @@
 
   .heroimage {
     max-width: 100%; /* Full-width image */
+    display: block;
+    margin: 2rem auto 0;
   }
 
   .landing__intro-section {
